@@ -13,12 +13,24 @@ app.use(
                 "'self'",
                 "'unsafe-inline'",
                 '*.googletagmanager.com',
-                '*.google-analytics.com'
+                '*.google-analytics.com',
+                '*.decibelinsight.net',
+                '*.decibelinsight.com'
             ],
             styleSrc: ["'self'", "'unsafe-inline'"],
-            connectSrc: ['*.google-analytics.com', 'www.googleapis.com'],
+            connectSrc: [
+                '*.google-analytics.com', 
+                'www.googleapis.com', 
+                '*.decibelinsight.net',
+                '*.decibelinsight.com'
+            ],
             imgSrc: ["'self'", '*.google-analytics.com']
         }
+    })
+);
+app.use(
+    helmet.referrerPolicy({
+        policy: 'no-referrer-when-downgrade'
     })
 );
 app.use(compression());
