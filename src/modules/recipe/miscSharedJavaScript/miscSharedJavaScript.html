@@ -1,25 +1,27 @@
 <template>
     <ui-card title="MiscSharedJavaScript">
         <div>
-            <ui-input
-                type="number"
-                label="Principal"
-                value={principal}
-                onchange={principalChange}
-            ></ui-input>
-            <ui-select
-                label="Term"
-                value={term}
-                onchange={termChange}
-                options={termOptions}
-            >
-            </ui-select>
-            <ui-input
-                type="number"
-                label="Rate"
-                value={rate}
-                onchange={rateChange}
-            ></ui-input>
+            <form id="misc-shared-js">
+                <ui-input
+                    type="number"
+                    label="Principal"
+                    value={principal}
+                    onchange={principalChange}
+                ></ui-input>
+                <ui-select
+                    label="Term"
+                    value={term}
+                    onchange={termChange}
+                    options={termOptions}
+                >
+                </ui-select>
+                <ui-input
+                    type="number"
+                    label="Rate"
+                    value={rate}
+                    onchange={rateChange}
+                ></ui-input>
+            </form>
             <p class="margin-vertical-small">
                 <ui-button
                     label="Calculate Monthly Payment"

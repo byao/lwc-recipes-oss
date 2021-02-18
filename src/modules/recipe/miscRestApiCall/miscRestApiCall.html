@@ -2,19 +2,21 @@
     <ui-card title="MiscRestApiCall">
         <div class="container">
             <div class="search">
-                <ui-input
-                    type="search"
-                    onchange={handleSearchKeyChange}
-                    label="Search Books"
-                    value={searchKey}
-                ></ui-input>
-                <p class="margin-vertical-small">
-                    <ui-button
-                        label="Search"
-                        class="button"
-                        onclick={handleSearchClick}
-                    ></ui-button>
-                </p>
+                <form id="misc-search">
+                    <ui-input
+                        type="search"
+                        onchange={handleSearchKeyChange}
+                        label="Search Books"
+                        value={searchKey}
+                    ></ui-input>
+                    <p class="margin-vertical-small">
+                        <ui-button
+                            label="Search"
+                            class="button"
+                            onclick={handleSearchClick}
+                        ></ui-button>
+                    </p>
+                </form>
             </div>
             <template if:true={books}>
                 <ul>
