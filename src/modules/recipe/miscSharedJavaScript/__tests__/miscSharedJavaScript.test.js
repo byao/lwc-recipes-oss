@@ -63,7 +63,7 @@ describe('recipe-misc-shared-java-script', () => {
         document.body.appendChild(element);
 
         // Select input fields for simulating user input
-        const inputEls = element.shadowRoot.querySelectorAll('ui-input');
+        const inputEls = element.shadowRoot.querySelectorAll('recipe-input');
 
         inputEls.forEach((el) => {
             if (el.label === 'Rate') {

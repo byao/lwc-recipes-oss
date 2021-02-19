@@ -1,21 +1,24 @@
 <template>
     <ui-card title="MiscDomQuery">
         <div>
-            <ui-input
+            <recipe-input
                 label="Category 1"
                 type="checkbox"
                 onchange={handleCheckboxChange}
-            ></ui-input>
-            <ui-input
+                name="cat1"
+            ></recipe-input>
+            <recipe-input
                 label="Category 2"
                 type="checkbox"
                 onchange={handleCheckboxChange}
-            ></ui-input>
-            <ui-input
+                name="cat2"
+            ></recipe-input>
+            <recipe-input
                 label="Category 3"
                 type="checkbox"
                 onchange={handleCheckboxChange}
-            ></ui-input>
+                name="cat3"
+            ></recipe-input>
 
             <p class="margin-top">Checked items: {selection}</p>
         </div>

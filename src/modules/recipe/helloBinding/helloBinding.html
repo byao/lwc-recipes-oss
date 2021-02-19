@@ -2,11 +2,12 @@
     <ui-card title="HelloBinding">
         <div>
             <p>Hello, {greeting}!</p>
-            <ui-input
+            <recipe-input
                 label="Name"
+                name="name"
                 value={greeting}
                 onchange={handleChange}
-            ></ui-input>
+            ></recipe-input>
         </div>
 
         <recipe-view-source source="recipe/helloBinding" slot="footer">

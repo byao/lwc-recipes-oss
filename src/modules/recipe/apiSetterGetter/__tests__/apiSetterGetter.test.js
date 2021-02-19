@@ -11,8 +11,8 @@ describe('recipe-api-setter-getter', () => {
         });
         document.body.appendChild(element);
 
-        // Query ui-input elements
-        const uiInputEls = element.shadowRoot.querySelectorAll('ui-input');
+        // Query recipe-input elements
+        const uiInputEls = element.shadowRoot.querySelectorAll('recipe-input');
 
         const todoCountPrevious = element.shadowRoot.querySelector(
             'recipe-todo-list'

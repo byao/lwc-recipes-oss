@@ -2,12 +2,13 @@
     <ui-card title="MiscSharedJavaScript">
         <div>
             <form id="misc-shared-js">
-                <ui-input
+                <recipe-input
                     type="number"
                     label="Principal"
                     value={principal}
                     onchange={principalChange}
-                ></ui-input>
+                    name="principal"
+                ></recipe-input>
                 <ui-select
                     label="Term"
                     value={term}
@@ -15,12 +16,13 @@
                     options={termOptions}
                 >
                 </ui-select>
-                <ui-input
+                <recipe-input
                     type="number"
                     label="Rate"
                     value={rate}
                     onchange={rateChange}
-                ></ui-input>
+                    name="rate"
+                ></recipe-input>
             </form>
             <p class="margin-vertical-small">
                 <ui-button

@@ -1,11 +1,12 @@
 <template>
     <ui-card title="HelloConditionalRendering">
         <div>
-            <ui-input
+            <recipe-input
                 type="checkbox"
                 label="Show details"
                 onchange={handleChange}
-            ></ui-input>
+                name="details"
+            ></recipe-input>
 
             <div class="details">
                 <template if:true={areDetailsVisible}>

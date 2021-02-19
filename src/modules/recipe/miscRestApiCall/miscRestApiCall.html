@@ -3,12 +3,13 @@
         <div class="container">
             <div class="search">
                 <form id="misc-search">
-                    <ui-input
+                    <recipe-input
                         type="search"
                         onchange={handleSearchKeyChange}
                         label="Search Books"
                         value={searchKey}
-                    ></ui-input>
+                        name="search"
+                    ></recipe-input>
                     <p class="margin-vertical-small">
                         <ui-button
                             label="Search"

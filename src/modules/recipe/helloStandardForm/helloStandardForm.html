@@ -2,16 +2,16 @@
     <ui-card title="HelloStandardForm">
         <div>
             <form id="hello-standard-form">
-                <ui-input
+                <recipe-input
                     name="firstName"
                     label="First Name"
                     onchange={handleChange}
-                ></ui-input>
-                <ui-input
+                ></recipe-input>
+                <recipe-input
                     name="lastName"
                     label="Last Name"
                     onchange={handleChange}
-                ></ui-input>
+                ></recipe-input>
                 <p class="margin-vertical-small">
                     <ui-button label="Submit" onclick={submitForm}></ui-button>
                 </p>

@@ -1,11 +1,12 @@
 <template>
     <ui-card title="CompositionContactSearch">
         <div>
-            <ui-input
+            <recipe-input
                 type="search"
                 onchange={handleKeyChange}
                 label="Search"
-            ></ui-input>
+                name="search"
+            ></recipe-input>
             <template if:true={contacts}>
                 <template for:each={contacts} for:item="contact">
                     <recipe-contact-tile

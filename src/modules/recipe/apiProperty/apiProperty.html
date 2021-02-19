@@ -1,14 +1,15 @@
 <template>
     <ui-card title="ApiProperty">
         <div>
-            <ui-input
+            <recipe-input
                 label="Percentage"
                 type="number"
+                name="percentage"
                 min="0"
                 max="100"
                 value={percentage}
                 onchange={handlePercentageChange}
-            ></ui-input>
+            ></recipe-input>
             <recipe-chart-bar percentage={percentage}></recipe-chart-bar>
         </div>
 

@@ -1,13 +1,14 @@
 <template>
     <ui-card title="LibsMomentjs">
         <div>
-            <ui-input
+            <recipe-input
                 label="Current date/time"
                 type="datetime"
                 value={selectedDateTime}
                 onchange={handleDateTimeChange}
+                name="datetime"
                 disabled
-            ></ui-input>
+            ></recipe-input>
             <ui-output
                 label="Day of year"
                 type="datetime"

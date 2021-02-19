@@ -29,7 +29,7 @@ describe('recipe-hello-conditional-rendering', () => {
         document.body.appendChild(element);
 
         // Toggle checkbox to show details
-        const inputEl = element.shadowRoot.querySelector('ui-input');
+        const inputEl = element.shadowRoot.querySelector('recipe-input');
         inputEl.checked = true;
         inputEl.dispatchEvent(new CustomEvent('change'));
 
@@ -51,7 +51,7 @@ describe('recipe-hello-conditional-rendering', () => {
         document.body.appendChild(element);
 
         // Toggle checkbox to show details
-        const inputEl = element.shadowRoot.querySelector('ui-input');
+        const inputEl = element.shadowRoot.querySelector('recipe-input');
         inputEl.checked = true;
         inputEl.dispatchEvent(new CustomEvent('change'));
 

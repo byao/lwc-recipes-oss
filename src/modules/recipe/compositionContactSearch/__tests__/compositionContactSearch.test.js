@@ -65,7 +65,7 @@ describe('recipe-composition-contact-search', () => {
         document.body.appendChild(element);
 
         // Simulate search
-        const searchInput = element.shadowRoot.querySelector('ui-input');
+        const searchInput = element.shadowRoot.querySelector('recipe-input');
         searchInput.value = USER_INPUT;
         searchInput.dispatchEvent(new CustomEvent('change'));
 
@@ -99,7 +99,7 @@ describe('recipe-composition-contact-search', () => {
         document.body.appendChild(element);
 
         // Simulate search
-        const searchInput = element.shadowRoot.querySelector('ui-input');
+        const searchInput = element.shadowRoot.querySelector('recipe-input');
         searchInput.value = USER_INPUT;
         searchInput.dispatchEvent(new CustomEvent('change'));
 
@@ -134,7 +134,7 @@ describe('recipe-composition-contact-search', () => {
         document.body.appendChild(element);
 
         // Simulate search
-        const searchInput = element.shadowRoot.querySelector('ui-input');
+        const searchInput = element.shadowRoot.querySelector('recipe-input');
         searchInput.value = USER_INPUT;
         searchInput.dispatchEvent(new CustomEvent('change'));
 
@@ -164,7 +164,7 @@ describe('recipe-composition-contact-search', () => {
         document.body.appendChild(element);
 
         // Simulate search
-        const searchInput = element.shadowRoot.querySelector('ui-input');
+        const searchInput = element.shadowRoot.querySelector('recipe-input');
         searchInput.value = USER_INPUT;
         searchInput.dispatchEvent(new CustomEvent('change'));
 

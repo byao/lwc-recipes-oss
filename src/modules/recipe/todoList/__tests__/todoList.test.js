@@ -75,7 +75,7 @@ describe('recipe-todo-list', () => {
         document.body.appendChild(element);
 
         // Click filter checkbox
-        const inputEl = element.shadowRoot.querySelector('ui-input');
+        const inputEl = element.shadowRoot.querySelector('recipe-input');
         inputEl.checked = true;
         inputEl.dispatchEvent(new CustomEvent('change'));
 

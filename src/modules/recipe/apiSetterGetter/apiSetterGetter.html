@@ -1,17 +1,19 @@
 <template>
     <ui-card title="ApiSetterGetter">
         <div>
-            <ui-input
+            <recipe-input
                 label="Description"
                 onchange={handleDescriptionChange}
                 value={description}
-            ></ui-input>
-            <ui-input
+                name="description"
+            ></recipe-input>
+            <recipe-input
                 label="Priority"
                 type="checkbox"
                 onchange={handlePriorityChange}
                 checked={priority}
-            ></ui-input>
+                name="priority"
+            ></recipe-input>
             <ui-button label="Add Todo" onclick={handleSave}></ui-button>
             <recipe-todo-list todos={todos}></recipe-todo-list>
         </div>

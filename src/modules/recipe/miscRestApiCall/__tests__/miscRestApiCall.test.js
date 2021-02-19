@@ -59,7 +59,7 @@ describe('recipe-misc-rest-api-call', () => {
         const fetch = (global.fetch = mockFetch({ items: [] }));
 
         // Query the input field for simulating user input.
-        const inputEl = element.shadowRoot.querySelector('ui-input');
+        const inputEl = element.shadowRoot.querySelector('recipe-input');
         inputEl.value = USER_INPUT;
         inputEl.dispatchEvent(new CustomEvent('change'));
 
@@ -103,7 +103,7 @@ describe('recipe-misc-rest-api-call', () => {
         const fetch = (global.fetch = mockFetch(FETCH_DATA));
 
         // Query the input field for simulating user input.
-        const inputEl = element.shadowRoot.querySelector('ui-input');
+        const inputEl = element.shadowRoot.querySelector('recipe-input');
         inputEl.value = USER_INPUT;
         inputEl.dispatchEvent(new CustomEvent('change'));
 

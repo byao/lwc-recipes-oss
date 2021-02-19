@@ -23,7 +23,7 @@ describe('recipe-hello-binding', () => {
         expect(div.textContent).not.toBe(`Hello, ${EXPECTED}!`);
 
         // Trigger new greeting
-        const inputEl = element.shadowRoot.querySelector('ui-input');
+        const inputEl = element.shadowRoot.querySelector('recipe-input');
         inputEl.value = EXPECTED;
         inputEl.dispatchEvent(new CustomEvent('change'));
 

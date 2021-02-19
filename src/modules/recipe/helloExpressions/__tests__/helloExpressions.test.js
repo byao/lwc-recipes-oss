@@ -12,9 +12,9 @@ describe('recipe-hello-expressions', () => {
     });
 
     function setInputElementValues(element, firstName, lastName) {
-        // ui-input doesn't mirror its properties as attributes so
+        // recipe-input doesn't mirror its properties as attributes so
         // can't use an attribute query selector.
-        element.shadowRoot.querySelectorAll('ui-input').forEach((input) => {
+        element.shadowRoot.querySelectorAll('recipe-input').forEach((input) => {
             if (firstName && input.name === 'firstName') {
                 input.value = firstName;
                 input.dispatchEvent(new CustomEvent('change'));

@@ -37,7 +37,7 @@ describe('recipe-api-property', () => {
         document.body.appendChild(element);
 
         // Select input field for simulating user input
-        const uiInputEl = element.shadowRoot.querySelector('ui-input');
+        const uiInputEl = element.shadowRoot.querySelector('recipe-input');
         uiInputEl.value = PERCENTAGE_CUSTOM;
         uiInputEl.dispatchEvent(new CustomEvent('change'));
 
@@ -61,7 +61,7 @@ describe('recipe-api-property', () => {
         document.body.appendChild(element);
 
         // Select input field for simulating user input
-        const uiInputEl = element.shadowRoot.querySelector('ui-input');
+        const uiInputEl = element.shadowRoot.querySelector('recipe-input');
         uiInputEl.value = PERCENTAGE_INVALID;
         uiInputEl.dispatchEvent(new CustomEvent('change'));
 

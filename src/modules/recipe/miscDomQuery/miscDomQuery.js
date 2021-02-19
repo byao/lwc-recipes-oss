@@ -5,7 +5,9 @@ export default class MiscDomQuery extends LightningElement {
 
     handleCheckboxChange() {
         // Query the DOM
-        const checked = Array.from(this.template.querySelectorAll('ui-input'))
+        const checked = Array.from(
+            this.template.querySelectorAll('recipe-input')
+        )
             // Filter to only checked items
             .filter((element) => element.checked)
             // Map to their labels

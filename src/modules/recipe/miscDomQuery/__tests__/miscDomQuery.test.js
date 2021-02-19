@@ -9,31 +9,31 @@ describe('recipe-misc-dom-query', () => {
         }
     });
 
-    it('renders ui-input checkbox fields unchecked', () => {
+    it('renders recipe-input checkbox fields unchecked', () => {
         // Create initial element
         const element = createElement('recipe-misc-dom-query', {
             is: MiscDomQuery
         });
         document.body.appendChild(element);
 
-        // Query all ui-input fields
+        // Query all recipe-input fields
         const uiInputCheckedEls = element.shadowRoot.querySelectorAll(
-            'ui-input'
+            'recipe-input'
         );
         uiInputCheckedEls.forEach((input) => {
             expect(input.checked).toBeFalsy();
         });
     });
 
-    it('displays labels of checked ui-input fields as checked items', () => {
+    it('displays labels of checked recipe-input fields as checked items', () => {
         // Create initial element
         const element = createElement('recipe-misc-dom-query', {
             is: MiscDomQuery
         });
         document.body.appendChild(element);
 
-        // Query all ui-input fields
-        const uiInputEls = element.shadowRoot.querySelectorAll('ui-input');
+        // Query all recipe-input fields
+        const uiInputEls = element.shadowRoot.querySelectorAll('recipe-input');
         uiInputEls[0].checked = true;
         uiInputEls[0].dispatchEvent(new CustomEvent('change'));
 
@@ -46,14 +46,14 @@ describe('recipe-misc-dom-query', () => {
         // rejected state
         return Promise.resolve()
             .then(() => {
-                // Check if output text got newly rendered based on checked category ui-input field
+                // Check if output text got newly rendered based on checked category recipe-input field
                 expect(pEl.textContent).toBe('Checked items: Category 1');
 
                 uiInputEls[1].checked = true;
                 uiInputEls[1].dispatchEvent(new CustomEvent('change'));
             })
             .then(() => {
-                // Check if output text got newly rendered based on checked category ui-input field
+                // Check if output text got newly rendered based on checked category recipe-input field
                 expect(pEl.textContent).toBe(
                     'Checked items: Category 1, Category 2'
                 );
@@ -62,7 +62,7 @@ describe('recipe-misc-dom-query', () => {
                 uiInputEls[2].dispatchEvent(new CustomEvent('change'));
             })
             .then(() => {
-                // Check if output text got newly rendered based on checked category ui-input field
+                // Check if output text got newly rendered based on checked category recipe-input field
                 expect(pEl.textContent).toBe(
                     'Checked items: Category 1, Category 2, Category 3'
                 );
