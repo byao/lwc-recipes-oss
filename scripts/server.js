@@ -19,10 +19,12 @@ app.use(
             ],
             styleSrc: ["'self'", "'unsafe-inline'"],
             connectSrc: [
-                '*.google-analytics.com', 
-                'www.googleapis.com', 
+                '*.google-analytics.com',
+                'www.googleapis.com',
                 '*.decibelinsight.net',
-                '*.decibelinsight.com'
+                '*.decibelinsight.com',
+                'wss://collection.decibelinsight.net',
+                'https://collection.decibelinsight.net'
             ],
             imgSrc: ["'self'", '*.google-analytics.com']
         }
